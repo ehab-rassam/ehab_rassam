@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+
+  html {
+    scroll-behavior: smooth;
+    /* font-family: 'Inter', Tajawal; */
+  }
+
+  h1, h2, h3 {
+  font-family: 'Cairo', sans-serif;
+  font-weight: 700;
+  }
+  
+  body {
+    font-family: 'Tajawal', sans-serif;
+    background-color: #0a0a0a;
+    color: #e5e5e5;
+    overflow-x: hidden;
+  }
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #1a1a1a;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #dc2626;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #b91c1c;
+}
+
+/* Glassmorphism effect */
+.glass {
+  background: rgba(10, 10, 10, 0.6);
+  backdrop-filter: blur(12px);
+  border-bottom: 1px solid rgba(220, 38, 38, 0.2);
+}
+
+/* 3D Card Styles */
+.card-3d {
+  transform-style: preserve-3d;
+  transform: perspective(1000px);
+  transition: transform 0.3s ease;
+}
+
+.card-3d:hover {
+  transform: perspective(1000px) rotateX(5deg) rotateY(5deg);
+}
