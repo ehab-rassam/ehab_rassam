@@ -8,7 +8,7 @@ const Hero = () => {
   return (
     <section
       id="home"
-      className="min-h-screen flex items-center justify-center relative overflow-hidden pt-20"
+      className="min-h-screen w-full max-w-full flex items-center justify-center relative overflow-hidden pt-20"
     >
       {/* 3D Background */}
       <div className="absolute inset-0 z-0 opacity-30 pointer-events-none">

@@ -27,7 +27,7 @@ const AboutCards = () => {
   const [ref, inView] = useInView({ triggerOnce: true, threshold: 0.2 });
 
   return (
-    <section className="py-20 bg-darkBg/50">
+    <section className="py-20 bg-darkBg/50 w-full max-w-full overflow-hidden">
       <div className="container mx-auto px-6">
         <motion.h2
           initial={{ opacity: 0, y: 30 }}

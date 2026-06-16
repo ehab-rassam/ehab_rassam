@@ -54,7 +54,7 @@ export function ContactForm({ inView }) {
 
         {/* Honeypot: hidden from users, bots often fill */}
         <div
-          className="absolute -left-[9999px] top-auto h-px w-px overflow-hidden"
+          className="sr-only"
           aria-hidden="true"
         >
           <label htmlFor="contact-company">Company</label>

@@ -15,7 +15,7 @@ const Skills = () => {
   const [ref, inView] = useInView({ triggerOnce: true, threshold: 0.2 });
 
   return (
-    <section id="skills" className="py-20 bg-darkBg">
+    <section id="skills" className="py-20 bg-darkBg w-full max-w-full overflow-hidden">
       <div className="container mx-auto px-6">
         <motion.h2
           initial={{ opacity: 0, y: 30 }}
