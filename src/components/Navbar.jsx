@@ -30,7 +30,7 @@ const Navbar = () => {
         </div>
 
         {/* Desktop Menu */}
-        <div className="hidden md:flex gap-8">
+        <div className="hidden md:flex md:gap-4 lg:gap-8">
           {navItems.map((item) => (
             <a
               key={item}
@@ -55,7 +55,7 @@ const Navbar = () => {
 
       {/* Mobile Menu */}
       {menuOpen && (
-        <div className="md:hidden bg-black/95 backdrop-blur-lg absolute top-full left-0 w-full flex flex-col items-center gap-6 py-6">
+        <div className="md:hidden bg-black/95 backdrop-blur-lg absolute top-full left-0 w-full flex flex-col items-center gap-6 py-6 max-h-[calc(100vh-100%)] overflow-y-auto border-t border-red-600/10">
           {navItems.map((item) => (
             <a
               key={item}

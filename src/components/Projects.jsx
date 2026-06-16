@@ -192,11 +192,11 @@ const projects = [
 ];
 
 const Projects = () => {
-  const [activeCategory, setActiveCategory] = useState("All");
+  const [activeCategory, setActiveCategory] = useState("الكل");
   const [ref, inView] = useInView({ triggerOnce: true, threshold: 0.2 });
 
   const filteredProjects =
-    activeCategory === "All"
+    activeCategory === "الكل"
       ? projects
       : projects.filter((p) => p.category === activeCategory);
 

@@ -61,7 +61,7 @@ const Contact = () => {
             <div>
               <h3 className="text-xl font-bold mb-3">تابعني</h3>
 
-              <div className="flex space-x-4">
+              <div className="flex gap-4 flex-wrap">
 
                 {/* Instagram */}
                 <a

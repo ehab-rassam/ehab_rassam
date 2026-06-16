@@ -13,12 +13,12 @@ const FloatingIcons = () => {
           key={index}
           className="absolute text-3xl opacity-10"
           initial={{
-            x: Math.random() * window.innerWidth,
-            y: Math.random() * window.innerHeight,
+            x: 0,
+            y: 0,
           }}
           animate={{
-            y: [null, -50, 50, -30, 30, 0],
-            x: [null, 30, -30, 20, -20, 0],
+            y: [0, -50, 50, -30, 30, 0],
+            x: [0, 30, -30, 20, -20, 0],
             rotate: [0, 360],
           }}
           transition={{
